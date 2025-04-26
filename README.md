@@ -15,6 +15,7 @@ A lightweight library for removing or replacing comments from JavaScript code. B
 npm install strip-js-comments
 ```
 
+
 ## Usage
 
 ```javascript
@@ -33,12 +34,14 @@ Input:
 ```javascript
 // This is a single-line comment
 /* This is a multi-line comment */
-const x = 1; // inline comment
+const x = 1 /* value 1 */; // inline comment
 ```
 
 Output:
 ```javascript
-const x = 1;
+
+
+const x = 1 ; 
 ```
 
 ### Replace Comments with Spaces
@@ -51,14 +54,14 @@ Input:
 ```javascript
 // This is a single-line comment
 /* This is a multi-line comment */
-const x = 1; // inline comment
+const x = 1 /* value 1 */; // inline comment
 ```
 
 Output:
 ```javascript
-
-
-const x = 1;                  
+                                
+                                  
+const x = 1              ;                  
 ```
 
 ### Handle JSX Comments
